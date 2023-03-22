@@ -1,0 +1,721 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Sparta-bold;
+  src: url(../Fonts/Spartan-Bold.ttf);
+}
+@font-face {
+  font-family: Sparta-medium;
+  src: url(../Fonts/Spartan-Light.ttf);
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header,
+ul {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 56px 769px 56px 164px;
+}
+ul {
+  margin-left: 94px;
+}
+ul a li {
+  font-family: Sparta-bold;
+  display: flex;
+  color: #7d828f;
+  font-size: 15px;
+  list-style-type: none;
+}
+ul li:hover,
+ol li:hover {
+  color: #1b1d23;
+}
+ul a {
+  text-decoration: none;
+}
+.about-us {
+  white-space: nowrap;
+  padding: 0 48px 0 56px;
+}
+.mobile-img {
+  display: none;
+}
+.projects-details {
+  position: absolute;
+  top: 5px;
+  padding: 180px 376px 180px 190px;
+}
+.projects-details h1 {
+  font-family: Sparta-bold;
+  font-size: 80px;
+  max-width: 544px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  color: white;
+}
+.projects-details p {
+  font-size: 15px;
+  font-family: Sparta-medium;
+  color: white;
+  max-width: 421px;
+  margin: 14px 0 40px 0;
+  line-height: 25px;
+}
+.profolio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+}
+.see-profolio img {
+  padding-left: 24px;
+}
+[type="button"]:hover,
+.ideas-info button:hover,
+.see-more button:hover,
+.see-profolio:hover {
+  background-color: #60636d;
+}
+[type="button"] {
+  font-family: Sparta-bold;
+  width: 252px;
+  height: 72px;
+  padding: 24px 32px 23px 30px;
+  font-size: 15px;
+  background-color: #1b1d23;
+  border: none;
+  color: white;
+}
+[type="button"] img {
+  position: relative;
+  top: 6px;
+  margin-left: 24px;
+}
+.lists {
+  margin-left: 30px;
+  left: 12px;
+  bottom: -27px;
+  position: absolute;
+}
+.no-of-imgs li {
+  background-color: white;
+  padding: 30px;
+}
+.no-of-imgs li:hover {
+  background-color: #eeeff4;
+}
+.info-arch {
+  max-width: 445px;
+}
+.no-of-imgs {
+  font-family: Sparta-bold;
+  list-style-type: none;
+  display: flex;
+  padding: 30px;
+  width: 80px;
+  font-size: 15px;
+  color: #7d828f;
+  margin-left: 18px;
+}
+#item-1 {
+  color: white;
+  background-color: black;
+}
+.introduction {
+  margin: -23px 125px 0 354px;
+}
+
+.arch-details {
+  display: flex;
+}
+.arch-studio h1 {
+  font-family: Sparta-bold;
+  font-size: 200px;
+  line-height: 200px;
+  color: #eeeff4;
+  position: relative;
+  z-index: 10;
+  margin: 95px 0 0 165px;
+}
+.arch-details h2 {
+  max-width: 481px;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  font-family: Sparta-bold;
+}
+.arch-details p {
+  font-family: Sparta-medium;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #60636d;
+  font-size: 15px;
+  line-height: 25px;
+}
+.arch-studio-pic {
+  margin: -91px 50px -98px 0;
+}
+.ideas {
+  margin: 200px 156px;
+  position: relative;
+}
+
+.ideas-info {
+  font-family: Sparta-bold;
+  top: 168px;
+  left: 190px;
+  bottom: 168px;
+  position: absolute;
+}
+.ideas-info h1 {
+  max-width: 445px;
+  color: white;
+  font-family: Sparta-bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+}
+.ideas-info button {
+  font-family: Sparta-bold;
+  margin-top: 26px;
+  width: 187px;
+  height: 72px;
+  font-size: 15px;
+  background-color: #1b1d23;
+  border: none;
+  color: white;
+}
+.ideas-info button:hover {
+  background-color: #60636d;
+}
+.ideas-info button img,
+.see-more button img,
+.header-2 button img {
+  position: relative;
+  top: 6px;
+  margin-left: 24px;
+}
+
+.see-more {
+  margin-left: 165px;
+  display: flex;
+  margin-bottom: 65px;
+  align-items: center;
+}
+.see-more h1 {
+  margin-right: 653px;
+  color: #1b1d23;
+  font-family: Sparta-bold;
+  font-size: 56px;
+  line-height: 56px;
+}
+.see-more button {
+  width: 170px;
+  height: 72px;
+  font-family: Sparta-bold;
+  background-color: #1b1d23;
+  color: white;
+  border: none;
+}
+.cards {
+  margin: 0 165px;
+  display: flex;
+}
+.card:nth-last-child(2) {
+  margin: 0 30px;
+}
+.cards .card {
+  position: relative;
+}
+.card .card-details {
+  position: absolute;
+  top: 466px;
+  left: 40px;
+}
+
+.card-details h1 {
+  font-family: Sparta-bold;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.card-details p {
+  font-family: Sparta-medium;
+  color: white;
+  font-size: 15px;
+}
+footer {
+  max-width: 984px;
+  max-height: 200px;
+  text-decoration: none;
+  background-color: #eeeff4;
+  display: flex;
+  margin: 200px 165px 0 165px;
+}
+.logo {
+  padding: 80px 52px;
+  background-color: #1b1d23;
+}
+.header-items {
+  position: relative;
+  display: flex;
+  padding: 87px 383px 88px 85px;
+}
+.header-items a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.header-items li {
+  font-size: 15px;
+  line-height: 25px;
+  color: #7d828f;
+  font-family: Sparta-bold;
+}
+.see-profolio {
+  display: flex;
+  position: absolute;
+  border: none;
+  left: 1023px;
+  font-family: Sparta-bold;
+  background-color: #1b1d23;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 65px;
+  color: white;
+  padding: 24px 32px 23px 30px;
+}
+.page-profolio {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 165px;
+}
+.profolio-icon {
+  margin: -153px 75px 0 -92px;
+}
+.row-1 {
+  margin-top: 56px;
+}
+.row-2,
+.row-3,
+.row-1 {
+  display: flex;
+}
+.row-2,
+.row-4 {
+  padding: 32px 0;
+  display: flex;
+}
+.middle-img {
+  padding: 0 32px;
+}
+.item-1 {
+  color: #1b1d23;
+  margin-top: 10px;
+}
+hr {
+  width: 50%;
+  color: #1b1d23;
+  margin-left: 13px;
+  margin-top: 7px;
+}
+.about {
+  margin: 0 165px;
+  display: flex;
+}
+.about-pic {
+  position: relative;
+}
+.about-icon {
+  position: absolute;
+  top: 257px;
+  right: 80px;
+  z-index: 20;
+}
+.about-imgs {
+  display: flex;
+  align-items: flex-start;
+}
+.professional-team {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 221px;
+  position: relative;
+  left: -193px;
+  padding: 160px 165px 0 182px;
+}
+.professional-team h1 {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  font-family: Sparta-bold;
+  margin-bottom: 30px;
+  color: #1b1d23;
+  max-width: 446px;
+}
+.professional-team p {
+  font-family: Sparta-medium;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #60636d;
+}
+.about-us-icon,
+.contact-logo-icon {
+  margin: -153px 76px 0 -97px;
+}
+.heritage {
+  display: flex;
+  margin: 200px 165px;
+}
+.heritage-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heritage-info h1 {
+  font-family: Sparta-bold;
+  letter-spacing: -2px;
+  font-size: 56px;
+  line-height: 56px;
+  color: #1b1d23;
+  margin-bottom: 32px;
+}
+.heritage-info p {
+  padding-top: 20px;
+  font-size: 15px;
+  font-family: Sparta-medium;
+  color: #60636d;
+  line-height: 25px;
+  font-weight: bold;
+}
+.heritage-pic {
+  margin-left: 124px;
+}
+.leaders {
+  display: flex;
+  margin: 200px 165px 160px 165px;
+}
+.leaders h1 {
+  margin-right: 128px;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  font-family: Sparta-bold;
+  max-width: 446px;
+}
+.leaders-info {
+  display: flex;
+}
+
+.leader-pic {
+  position: relative;
+}
+.leader img {
+  margin-bottom: 24px;
+}
+.leader h2 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1b1d23;
+  font-family: Sparta-bold;
+  margin-bottom: 4px;
+}
+.leader p {
+  font-size: 15px;
+  color: #1b1d23;
+  line-height: 25px;
+  font-family: Sparta-medium;
+  font-weight: bold;
+}
+
+.leader-4,
+.leader-3 {
+  margin-left: 30px;
+}
+.designer-finance .leader-4 {
+  margin-bottom: 65px;
+}
+.leader-1 {
+  margin-bottom: 65px;
+}
+.contact {
+  display: flex;
+  margin-left: 165px;
+}
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+}
+.reach-us {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 221px;
+  position: relative;
+  left: -153px;
+  padding-top: 160px;
+  padding-left: 182px;
+}
+.reach-us h1 {
+  max-width: 445px;
+  letter-spacing: -2px;
+  color: #1b1d23;
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 35px;
+  font-family: Sparta-bold;
+}
+.reach-us p {
+  max-width: 445px;
+  font-family: Sparta-medium;
+  line-height: 25px;
+  font-size: 15px;
+  color: #60636d;
+}
+.contact-logo {
+  position: absolute;
+  right: 78px;
+  z-index: 20;
+  top: 262px;
+}
+.contact-img {
+  position: relative;
+}
+.text-1 {
+  display: flex;
+  flex-direction: column;
+}
+.contact-details {
+  justify-content: space-between;
+  display: flex;
+  margin: 0 165px;
+  margin-top: 275px;
+}
+.contact-details p {
+  font-family: Sparta-medium;
+  font-size: 15px;
+  line-height: 35px;
+  color: #60636d;
+  font-weight: bold;
+}
+.contact-details h2 {
+  font-family: Sparta-bold;
+  font-size: 15px;
+  line-height: 35px;
+  color: #60636d;
+  padding-bottom: 8px;
+}
+.contact-details h1 {
+  font-family: Sparta-bold;
+  padding-right: 23px;
+  font-size: 56px;
+  line-height: 56px;
+  color: #1b1d23;
+  letter-spacing: -2px;
+  max-width: 350px;
+}
+.arrow-btn {
+  padding-left: 24px;
+}
+.contact-details a {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  font-family: Sparta-bold;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b1d23;
+}
+.arch-location {
+  margin: 200px 0;
+  text-align: center;
+}
+.connect {
+  margin: 160px 165px 240px 165px;
+  display: flex;
+}
+.connect h1 {
+  margin-right: 32px;
+  font-family: Sparta-bold;
+  font-size: 56px;
+}
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #979797;
+  font-family: Sparta-bold;
+  letter-spacing: -0.31px;
+  font-size: 20px;
+  width: 730px;
+}
+::placeholder {
+  color: #c8ccd8;
+}
+form {
+  margin-left: 30px;
+}
+.name,
+.email {
+  width: 730px;
+  padding: 0 35px 24px 0;
+  margin-bottom: 40px;
+}
+.message {
+  padding: 40px 35px 72px 0;
+}
+.arrow-icon {
+  position: relative;
+  left: 654px;
+}
+.icons {
+  display: none;
+}
+.twitter-icon {
+  padding-left: 25px;
+}
+/* PROFOLIO MOBILE */
+@media (max-width: 500px) {
+  .page-profolio {
+    display: flex;
+    justify-content: center;
+    margin: 88px 32px 72px 32px;
+  }
+  .middle-img {
+    padding: 24px 0;
+  }
+  .profolio-icon {
+    display: none;
+  }
+  .row-2,
+  .row-3,
+  .row-1,
+  .row-2,
+  .row-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    display: none;
+  }
+  footer {
+    max-height: 460px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    position: relative;
+    bottom: 42px;
+    padding: 50px 30px 48px 32px;
+  }
+  .about-us {
+    padding: 32px 0;
+  }
+  .header-items {
+    margin-top: 32px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .see-profolio {
+    position: static;
+  }
+  header {
+    padding: 32px;
+  }
+  .about-us-icon {
+    display: none;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .about-icon {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .professional-team {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 35px 0;
+    position: relative;
+    top: -90px;
+    left: 0;
+  }
+  .professional-team h1 {
+    padding-top: 54px;
+    font-size: 40px;
+    max-width: 378px;
+    margin-bottom: 0;
+  }
+  .professional-team p {
+    max-width: 311px;
+    margin-top: 12px;
+  }
+  .mobile-pic {
+    display: none;
+  }
+  .heritage {
+    margin: 0;
+    display: block;
+    padding-top: 72px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .heritage-info p {
+    padding-top: 29px;
+  }
+
+  .heritage-info h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+  .icons {
+    display: block;
+  }
+  .leader-1,
+  .leader-2,
+  .leader-3,
+  .leader-4 {
+    margin-bottom: 40px;
+  }
+  .leader-3,
+  .leader-4 {
+    margin-left: 0;
+  }
+  .leaders {
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .leaders h1 {
+    padding-top: 72px;
+    padding-left: 12px;
+    margin-bottom: 65px;
+    font-size: 40px;
+  }
+}
